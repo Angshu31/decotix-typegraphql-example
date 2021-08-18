@@ -1,0 +1,36 @@
+{
+  "name": "decotix-typegraphql-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "prisma:migrate": "prisma migrate",
+    "prisma:push": "prisma db push",
+    "prisma:generate": "prisma generate",
+    "prisma:format": "prisma format",
+    "decotix": "ts-node src/lib/buildPrismaSchema",
+    "start": "node dist/index.js",
+    "build": "tsc && yarn decotix",
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "keywords": [],
+  "author": "Bedanta Mukhopadhay (Angshu31)",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^2.29.1",
+    "apollo-server": "^3.1.2",
+    "apollo-server-express": "^3.1.2",
+    "class-validator": "^0.13.1",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "decotix": "^1.0.9",
+    "prisma": "^2.29.1",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  }
+}
